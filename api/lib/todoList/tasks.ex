@@ -21,6 +21,12 @@ defmodule TodoList.Tasks do
     Repo.all(Task)
   end
 
+  def list_by_userID(idUser) do
+    Task
+    |> where(user_id: ^idUser)
+    |> Repo.all
+  end
+
   @doc """
   Gets a single task.
 

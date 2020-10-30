@@ -5,7 +5,7 @@ defmodule TodoList.Users.User do
   schema "users" do
     field :firstname, :string
     field :lastname, :string
-    has_many :tasks, TodoList.Tasks.Task
+    has_many :tasks, TodoList.Tasks.Task, on_delete: :delete_all
 
     timestamps()
   end
