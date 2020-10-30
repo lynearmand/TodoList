@@ -11,6 +11,7 @@ defmodule TodoListWeb.Router do
     resources "/users", UserController, except: [:new, :edit]
     #Routes for task
     resources "/tasks", TaskController, except: [:new, :edit]
+    get "/tasks/users/:idUser", TaskController, :index
 
 
   end

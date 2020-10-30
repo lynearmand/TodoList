@@ -99,3 +99,8 @@ For look at the routes created, we have the following command :
 ```
     mix phx.routes
 ```
+
+### Run project 
+```
+    mix phx.server
+```

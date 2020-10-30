@@ -6,6 +6,11 @@ defmodule TodoListWeb.TaskController do
 
   action_fallback TodoListWeb.FallbackController
 
+  def index(conn, %{"idUser"=>idUser}) do
+    tasks = Tasks.list_by_userID(idUser)
+    render(conn, "index.json", tasks: tasks)
+  end
+
   def index(conn, _params) do
     tasks = Tasks.list_tasks()
     render(conn, "index.json", tasks: tasks)
