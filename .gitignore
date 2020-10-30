@@ -1,0 +1,14 @@
+#serv files for database
+Projet1/theme01/config/dev.exs
+
+# dependencies
+node_modules
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+.idea
