@@ -5,7 +5,7 @@ Projet1/theme01/config/dev.exs
 node_modules
 
 # production
-build
+_build
 
 # misc
 .DS_Store
